@@ -28,6 +28,8 @@
                         clifford: '#da373d',
                         'button-color': '#FF4240',
                         'paragraph': '#13131899',
+                        'footer': '#ffffff99',
+                        
                     }
                 }
             }
@@ -516,9 +518,9 @@
             </div>
 
             <!-- Contact Details and Form-->
-            <div>
+            <div class="flex flex-col p-4 lg:flex-row lg:p-0">
                 <!-- contacts -->
-                <div class="border-2 rounded-xl p-12">
+                <div class="border-2 rounded-xl p-3 lg:p-12">
                     <div class="space-y-5">
                         <!-- phone number -->
                         <div class="w-[360px] h-[200px] px-14 py-8 rounded-2xl bg-[#bced6e19] space-y-3">
@@ -542,50 +544,90 @@
                 </div>
                 <!-- Form -->
                 <div>
-                    <form class="card-body">
-                        <div class="form-control">
+                    <form class="card-body grid  lg:grid-cols-8 lg:gap-6">
+                        <div class="form-control col-span-8 lg:col-span-4">
                           <label class="label">
-                            <span class="label-text">Your Name</span>
+                            <span class="label-text text-xl font-bold">Your Name</span>
                           </label>
-                          <input type="text" placeholder="Enter your full name" class="input input-bordered" required />
+                          <input type="text" placeholder="Enter your full name" class="input input-bordered w-[320px] bg-[#13131805]" required />
                         </div>
-                        <div class="form-control">
+                        <div class="form-control col-span-8 lg:col-span-4">
                           <label class="label">
-                            <span class="label-text">Your Email</span>
+                            <span class="label-text text-xl font-bold">Your Email</span>
                           </label>
-                          <input type="email" placeholder="Enter your email" class="input input-bordered" required />
+                          <input type="email" placeholder="Enter your email" class="input input-bordered w-[320px] bg-[#13131805]" required />
                         </div>
-                        <div class="form-control">
+                        <div class="form-control col-span-8 lg:col-span-4">
                           <label class="label">
-                            <span class="label-text">Subject</span>
+                            <span class="label-text text-xl font-bold">Subject</span>
                           </label>
-                          <input type="text" placeholder="Enter your subject" class="input input-bordered" required />
+                          <input type="text" placeholder="Enter your subject" class="input input-bordered w-[320px] bg-[#13131805]" required />
                         </div>
-                        <div class="form-control">
+                        <div class="form-control col-span-8 lg:col-span-4">
                           <label class="label">
-                            <span class="label-text">Phone Number</span>
+                            <span class="label-text text-xl font-bold">Phone Number</span>
                           </label>
-                          <input type="text" placeholder="Enter your phone number" class="input input-bordered" required />
+                          <input type="text" placeholder="Enter your phone number" class="input input-bordered w-[320px] bg-[#13131805]" required />
                         </div>
-                        <div class="form-control">
+                        <div class="form-control col-span-8">
                           <label class="label">
-                            <span class="label-text">Message</span>
+                            <span class="label-text text-xl font-bold">Message</span>
                           </label>
-                          <input type="text" placeholder="Write your message" class="input input-bordered" required />
+                          <input type="text" placeholder="Write your message" class="input input-bordered w-[335px] h-[200px] bg-[#13131805] lg:w-[650px] lg:h-[370px] text-center" required />
                         </div>
-                        <div class="form-control mt-6">
-                          <button class="btn btn-primary">Login</button>
+                        <div class="form-control mt-6 col-span-8 w-[335px] lg:w-[650px]">
+                          <button class="btn bg-button-color text-xl font-bold text-white">Send Message</button>
                         </div>
                       </form>
                 </div>
+            </div>
+
+            <!-- Get in touch footer -->
+            <div class="p-8 lg:p-0">
+                <footer class="bg-[#13131805] rounded-xl text-center p-10 space-y-5 mt-12">
+                    <h4 class="text-2xl font-extrabold text-black">Social Media</h4>
+                    <div class="flex justify-center gap-10">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </footer>
             </div>
         </section>
     </main>
 
     <!-- Footer Part -->
-    <footer>
-
-    </footer>
+    <footer class="footer p-10 bg-black text-white">
+        <aside>
+          <h4 class="text-3xl font-extrabold">Get In Touch</h4>
+          <p class="text-footer w-[360px]">
+            Your journey with us doesn't end here. For inquiries, partnerships, or just to say hello, connect with us. We're just a message away, ready to turn conversations into collaborations.
+          </p>
+          <h6 class="text-footer">hockeys_support@gmail.com</h6>
+          <h6 class="text-footer">(+880) 123-321-5433</h6>
+        </aside> 
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 
 </body>
 
